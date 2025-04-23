@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 import cv2
 import numpy as np
-from object_detection import detect_objects_from_youtube
+from object_detection.tracking import detect_objects_from_youtube
 
 
 st.set_page_config(page_title="YouTube YOLO Detection", layout="centered")

@@ -1,14 +1,14 @@
 🎥 YouTube Object Detection & Tracking using YOLO + Streamlit
 
 ******************************************************************
-A web-based tool built with Streamlit that allows you to run real-time object detection and tracking on YouTube videos using YOLOv5/YOLOv8 and Deep SORT.
+A web-based tool built with Streamlit that allows you to run real-time object detection and tracking on YouTube videos using YOLO models and Deep SORT.
 
 ******************************************************************
 🚀 Features 
 
 📺 Input any YouTube video URL
 
-🧠 Detect objects using YOLOv8
+🧠 Detect objects using different YOLO models and compare the results
 
 🔁 Track detected objects using Deep SORT
 
@@ -28,12 +28,15 @@ Paste a YouTube URL → Click "Run Detection" → Watch object detection and tra
 📁 youtube-object-detection/
 │
 ├── main_ui.py                   # Streamlit app (UI only)
-├── object_detection.py         # Core logic: detection + tracking
+├── object_detection/
+    └── detection.py # Core logic: detection
+    └── tracking.py # Core logic: detection + tracking
+    └── compare_yolo_models_detection # Core logic: comparison of detection using different YOLO versions
 ├── tracker/
 │   └── deep_sort_tracker.py    # Deep SORT tracker
 ├── utils/
 │   └── youtube_utils.py        # YouTube stream URL resolver
-├── Pipfile / requirements.txt  # Environment dependencies
+├── requirements.txt  # Environment dependencies
 └── README.md
 
 </code></pre>
